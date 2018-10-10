@@ -1,0 +1,72 @@
+#nav{
+
+  width: 100%;
+}
+
+#nav .row div{
+  height: 50%;
+  padding: 0;
+}
+
+#nav p{
+  display: inline-block;
+  position:relative;
+}
+
+#nav .autoFont:first-child{
+    text-align: center;
+  }
+
+#signUp, #signOut{
+
+  padding-left: 5px !important;
+}
+  
+#create{
+  
+  text-align: right;
+  padding-right: 5px !important;
+}
+
+#nav .button p{
+
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px grey;
+}
+
+#nav .button p:hover{
+
+  border:none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  box-shadow: 0 2px 0px -2px grey;
+}
+
+@media(min-width: 768px){
+  
+  #signUp, #signOut{
+
+    padding-left: 0px !important;
+  }
+  
+  #create{
+  
+    text-align: right;
+    padding-right: 10px !important;
+  }
+
+  #nav .autoFont:first-child p{
+
+    padding-left: 5px;
+  }
+  
+  #nav .autoFont:first-child{
+    text-align: left;
+  }
+  
+  #nav .row div{
+    height: 100%;
+  }
+}

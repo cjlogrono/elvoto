@@ -1,0 +1,51 @@
+#recent, #top{
+  height: 42.5%;
+}
+
+#recent .row, #top .row{
+
+  height: 95%;
+  top: 1%;
+  width: 92.5%;
+  left: 3.75%;
+}
+
+.displayBox .row .header{
+
+  height: 20%;
+  text-align: center;
+  border-bottom: 4px solid black;
+  width: 98%;
+  margin-left: 1%;
+  box-shadow: 0 3px 0px -2px grey;
+}
+
+@media(min-width: 768px){
+  
+  #recent .row, #top .row{
+
+    height: 90%;
+    top: 2.5%;
+    width: 90%;
+    left: 0;
+  }
+  
+  #top .row{
+  
+    left: 7.5%;
+  }
+  
+  #recent .row{
+  
+    left: 2.5%;
+  }
+  
+  #recent, #top{
+    height: 85%;
+  }
+
+  .displayBox .row .header{
+
+    height: 12.5%;
+  }
+}

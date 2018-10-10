@@ -1,0 +1,26 @@
+extends layout2.pug
+
+block stylesheets
+  link(rel="stylesheet" href="/style2.css")
+
+block content
+  main
+    div.row
+      div.col-xs-12#search.displayBox
+        div.row#searchRow
+          div.col-xs-12#searchBar
+            input(type=text value="Search for a poll here....")
+      div.col-xs-12.col-sm-6#myPolls.displayBox
+        div.row
+          div.col-xs-12.autoFont.header
+            p My Polls
+          div.row.pollCont
+      div.col-xs-12.col-sm-6#topRecent.displayBox
+        div.row
+          div.col-xs-6.autoFont.header#top.active
+            p Top
+          div.col-xs-6.autoFont.header#recent
+            p Recent
+          div.row.pollCont
+            
+      

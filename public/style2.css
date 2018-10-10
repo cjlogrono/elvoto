@@ -1,0 +1,70 @@
+#myPolls, #topRecent{
+  height: 42.5%;
+}
+
+#myPolls .row, #topRecent .row{
+
+  height: 95%;
+  top: 1%;
+  width: 92.5%;
+  left: 3.75%;
+}
+
+.displayBox .row .header{
+
+  height: 20%;
+  text-align: center;
+  border-bottom: 4px solid black;
+  transition: background-color 1.5s ease;
+}
+
+#top{
+
+  border-right: 2px solid black;
+}
+
+#recent{
+
+  border-left: 2px solid black;
+}
+
+.header.active{
+
+  background-color: black;
+}
+
+.header.active p{
+
+  color: #2e4874;
+  transition: color 1.5s ease;
+}
+
+@media(min-width: 768px){
+  
+  #myPolls .row, #topRecent .row{
+
+    height: 90%;
+    top: 2.5%;
+    width: 90%;
+    left: 0;
+  }
+  
+  #myPolls .row{
+  
+    left: 7.5%;
+  }
+  
+  #topRecent .row{
+  
+    left: 2.5%;
+  }
+  
+  #myPolls, #topRecent{
+    height: 85%;
+  }
+
+  .displayBox .row .header{
+
+    height: 12.5%;
+  }
+}
