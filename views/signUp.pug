@@ -1,0 +1,29 @@
+extends layout3.pug
+
+block stylesheets
+    link(rel="stylesheet" href="/signUp.css")
+
+block content
+  main
+    div.row
+      div.col-xs-12.header.autoFont.h-25
+        p Sign Up
+      div.col-xs-12.email.h-20
+        div.col-xs-12.autoFont.h-50
+          p Email:
+        div.col-xs-12.h-50
+          input(type='text')#email
+      div.col-xs-12.user.h-20
+        div.col-xs-12.autoFont.h-50
+          p Username:
+        div.col-xs-12.h-50
+          input(type='text')#username
+      div.col-xs-12.password.h-20
+        div.col-xs-12.autoFont.h-50
+          p Password:
+        div.col-xs-12.h-50
+          input(type='password')#password
+      div.col-xs-12.button.h-10
+        div.col-xs-offset-4.col-xs-4.autoFont.h-100#signUpNow
+          p Continue
+      

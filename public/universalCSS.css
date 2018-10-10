@@ -1,0 +1,161 @@
+a{
+
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+p,input{
+  
+  font-family: Acme;
+  color: black;
+  display: inline-block;
+  -webkit-text-stroke: .2px white;
+}
+
+input{
+  
+  font-family: Acme !important;
+  color: black !important;
+  display: inline-block !important;
+  -webkit-text-stroke: .2px white !important;
+}
+
+body{
+  
+  overflow-x: none;
+  background: #a90329;
+  transition: background 1s ease;
+  filter: progid:DXImageTransform  text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+}
+
+#search{
+  height: 15%;
+  transition: height 1s linear;
+}
+
+#search.using{
+  height: 100% !important;
+}
+
+#search.using input{
+  height: 100% !important;
+}
+
+#search.using .row #searchBar{
+  top: 0 !important;
+  margin-top: 20px !important;
+  height: 12.5% !important;
+  margin-bottom: 10px;
+}
+
+main .row div .row{
+
+  position: relative;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px black;
+}
+
+#search #searchRow{
+  height: 95%;
+  width: 92.5%;
+  left: 3.75%;
+}
+
+#search .row #searchBar{
+
+  height: 75%;
+  top: 12.5%;
+  width: 90%;
+  left: 5%;
+  background-color: transparent;
+  border: none;
+}
+
+#search input{
+
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: transparent;
+  padding-left: 10px;
+  box-shadow: 0px 0px 4px black;
+}
+
+.pollCont{
+
+  height: 80% !important;
+  width: 100% !important;
+  left: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: scroll;
+}
+
+.poll{
+
+  height: 45%;
+}
+
+.poll .row{
+
+  background-color: black;
+  height: 90% !important;
+  top: 5% !important;
+  width:94% !important;
+  left: 3% !important;
+  padding: 5px 0;
+  border-radius: 8px;
+}
+
+.poll .row div{
+
+  height: 33%;
+  text-align: center;
+}
+
+.poll p{
+
+  color: #2e4874;
+  transition: color 1.5s ease;
+  
+}
+
+.poll.answered .col-xs-8{
+  
+  height: 40%;
+  top: 20%;
+  border-radius: 30px;
+  transition: background-color 1.5s ease;
+}
+
+
+@media(min-width: 768px){
+  
+  main .row div .row{
+    
+    border: 5px solid black;
+  }
+  
+  #search{
+    height: 15%;
+  }
+  
+  #search #searchRow{
+    height: 90%;
+    background-color: transparent;
+  }
+  
+  .poll{
+
+    height: 25%;
+  }
+  
+  .pollCont{
+  
+    height: 85% !important;
+  }
+}

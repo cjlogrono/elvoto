@@ -1,0 +1,50 @@
+extends layout1.pug
+
+block stylesheets
+    link(rel="stylesheet" href="/pollR.css")
+
+block content
+  main
+    div.row
+      form(id="ballot" action="#" method="POST").h-100
+        fieldset.h-100
+          div.col-xs-10.col-xs-offset-1.header.autoFont.h-20
+            p= poll
+          div.col-xs-12.value.h-15
+            div.col-xs-12.h-60.top-15.autoFont
+              p= valueOne
+            div.col-xs-12.h-40.barGraph
+              div.col-xs-8.col-xs-offset-1.h-100
+                div.bar(style="width: "+(onePercent)+"%;margin-left: "+oneMargin+"%;")
+              div.col-xs-2.h-100.autoFont
+                p= onePercent+"%"
+          div.col-xs-12.value.h-15
+            div.col-xs-12.h-60.top-15.autoFont
+              p= valueTwo
+            div.col-xs-12.h-40.barGraph
+              div.col-xs-8.col-xs-offset-1.h-100
+                div.bar(style="width: "+twoPercent+"%;margin-left: "+twoMargin+"%;")
+              div.col-xs-2.h-100.autoFont
+                p= twoPercent+"%"
+          div.col-xs-12.value.h-15
+            div.col-xs-12.h-60.top-15.autoFont
+              p= valueThree
+            div.col-xs-12.h-40.barGraph
+              div.col-xs-8.col-xs-offset-1.h-100
+                div.bar(style="width: "+threePercent+"%;margin-left: "+threeMargin+"%;")
+              div.col-xs-2.h-100.autoFont
+                p= threePercent+"%"
+          div.col-xs-12.value.h-15
+            div.col-xs-12.h-60.top-15.autoFont
+              p= valueFour
+            div.col-xs-12.h-40.barGraph
+              div.col-xs-8.col-xs-offset-1.h-100
+                div.bar(style="width: "+fourPercent+"%;margin-left: "+fourMargin+"%;")
+              div.col-xs-2.h-100.autoFont
+                p= fourPercent+"%"
+          div.col-xs-12.value.h-15
+            div.col-xs-12.h-60.top-15.autoFont
+              p= "Total voters: "+totalVotes
+            div.col-xs-12.h-40.top-15.autoFont
+              p To vote, please be sure to be signed in!
+            

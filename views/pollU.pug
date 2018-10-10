@@ -1,0 +1,35 @@
+extends layout2.pug
+
+block stylesheets
+    link(rel="stylesheet" href="/pollU.css")
+
+block content
+  main
+    div.row
+      form(id="ballot" action="#" method="POST").h-100
+        fieldset.h-100
+          div.col-xs-10.col-xs-offset-1.header.autoFont.h-20
+            p= poll
+          div.col-xs-12.value.h-15
+            div.col-xs-1.col-xs-offset-1.h-70.top-15
+              input(name="pollValue" type='radio' value=valueOne)#valueOne
+            div.col-xs-10.autoFont.h-70
+              p= valueOne
+          div.col-xs-12.value.h-15
+            div.col-xs-1.col-xs-offset-1.h-70.top-15
+              input(name="pollValue" type='radio' value=valueTwo)#valueTwo
+            div.col-xs-10.autoFont.h-70
+              p= valueTwo
+          div.col-xs-12.value.h-15
+            div.col-xs-1.col-xs-offset-1.h-70.top-15
+              input(name="pollValue" type='radio' value=valueThree)#valueThree
+            div.col-xs-10.autoFont.h-70
+              p= valueThree
+          div.col-xs-12.value.h-15
+            div.col-xs-1.col-xs-offset-1.h-70.top-15
+              input(name="pollValue" type='radio' value=valueFour)#valueFour
+            div.col-xs-10.autoFont.h-70
+              p= valueFour
+          div.col-xs-12.button.h-15
+            div.col-xs-offset-4.col-xs-4.autoFont.h-100
+              p Ballot

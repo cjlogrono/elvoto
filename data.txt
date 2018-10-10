@@ -1,0 +1,37 @@
+div.row.pollCont
+  div.col-xs-12.col-md-6.poll
+    div.row
+      div.col-xs-12.autoFont
+        p Best Munchie?
+      div.col-xs-6.autoFont
+        p Pizza
+      div.col-xs-6.autoFont
+        p Sushi
+      div.col-xs-6.autoFont
+        p Taco
+      div.col-xs-6.autoFont
+        p Hamburger
+  div.col-xs-12.col-md-6.poll.answered
+    div.row
+      div.col-xs-12.autoFont
+        p Some Random Question Poll Here?
+      div.col-xs-6.autoFont
+        p Pizza (60%)
+      div.col-xs-6.autoFont
+        p Sushi (10%)
+      div.col-xs-6.autoFont
+        p Taco (15%)
+      div.col-xs-6.autoFont
+        p Hamburger (5%)
+  div.col-xs-12.col-md-6.poll
+    div.row
+      div.col-xs-12.autoFont
+        p Some Random Question Poll Here?
+      div.col-xs-6.autoFont
+        p Poll #1
+      div.col-xs-6.autoFont
+        p Poll #2
+      div.col-xs-6.autoFont
+        p Poll #3
+      div.col-xs-6.autoFont
+        p Poll #4
